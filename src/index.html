@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Collins - 2d Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <p class="note">Tap/Click around to move</p>
+
+        <div id="textbox-container" style="display: none">
+          <div id="textbox">
+            <p id="dialogue" class="ui-text"></p>
+            <div class="btn-container">
+              <button id="close" class="ui-close-btn">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <canvas id="game"></canvas>
+    </div>
+    <script type="module" src="js/game.js"></script>
+  </body>
+</html>

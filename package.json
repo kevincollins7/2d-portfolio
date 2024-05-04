@@ -1,0 +1,20 @@
+{
+  "name": "2d-portfolio",
+  "version": "0.0.0",
+  "author": "Kevin Collins",
+  "description": "",
+  "scripts": {
+    "build": "esbuild src/**/*.ts --bundle --minify --outdir=dist/js && cp src/index.html dist/index.html && cp src/styles.css dist/styles.css && cp -r src/assets dist/assets",
+    "run": "esbuild src/index.html --bundle --outfile=public/app.js --watch --serveddir=public",
+    "dev": "esbuild src/game/game.ts --outdir=src/js --bundle --servedir=src",
+    "test": "esbuild --servedir=dist"
+  },
+  "dependencies": {
+    "kaboom": "^3000.1.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  }
+}
