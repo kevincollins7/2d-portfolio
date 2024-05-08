@@ -77,7 +77,7 @@ export default async function mainScene (k: KaboomCtx): Promise<void> {
     });
   
     k.onUpdate(() => {
-      k.camPos(player.pos.x, player.pos.y + 100);
+      k.camPos(player.pos.x, player.pos.y);
     });
   
     k.onMouseDown((mouseBtn) => {
